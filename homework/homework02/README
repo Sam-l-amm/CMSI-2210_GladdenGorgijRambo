@@ -1,62 +1,63 @@
-What is a computer system?
+1. What is a computer system?
 
 
-What are some of the parts of a computer system?
+2. What are some of the parts of a computer system?
+   Some of the parts that make up a computer system are, the CPU, RAM, motherboard, GPU, SSD
 
+3. What is the difference between a compiled language and an interpreted language?
+   A compiled language is converted directly into machine code that can be executed by the processor. Whereas an interpreted language is read line-by-line by another program who calls specific internal functions to execute the code.
+     -Source: https://www.freecodecamp.org/news/compiled-versus-interpreted-languages/
 
-What is the difference between a compiled language and an intepreted language?
-
-
-Is C a compiled language?
+4. Is C a compiled language?
    C is a compiled language, although it is slightly different from other compiled languages because in C doesn't enable a virtual OS, meaning the program is compiled to binary then executed by the users computer. 
 
-Who invented the C language?
+5. Who invented the C language?
    C was developed by Dennis M. Richie at Bell Labs.
       -Source: https://www.britannica.com/technology/C-computer-programming-language
 
-How long has C been in use?
+6. How long has C been in use?
    C has been in use for between 56-52 years, as it was developed by Dennis M. Richie between 1969- 1973
       -Source: https://www.britannica.com/technology/C-computer-programming-language
 
 
-Is a compiler a translator?
+7. Is a compiler a translator?
    The compiler is a translator, this is because when someone writes in a high-level language a compiler must take this code and translate it into assembly language.
 
-Is an assembler a translator?
+8. Is an assembler a translator?
    An assember is a translator because after a program is translated into assembly language by a compiler it is taken by an assembler and translated into machine language which can be understood by the machine.
 
-What is the command to list out the contents of a directory on a mac terminal window?
+9. What is the command to list out the contents of a directory on a mac terminal window?
    The command to list out the contents of a directory on a mac is "ls", on windows the command is dir.
 
-What does the C function atof() do?
+10. What does the C function atof() do?
    The function atof() is used to convert a string into a floating-point number and represent the converted floating point number to its corresponding double value
      -Source: https://www.tutorialspoint.com/c_standard_library/c_function_atof.htm
 
-What are the bottom two layers of a computer system? Give a brief desciption of each.
+11. What are the bottom two layers of a computer system? Give a brief desciption of each.
 
 
-What are the three steps of the Von Neumann Architecture?
+12. What are the three steps of the Von Neumann Architecture?
 
 
-What is the purpose of an ALU?
+13. What is the purpose of an ALU?
 
 
-What is a register?
+14. What is a register?
 
 
-What is one difference between Application software and System software?
+15. What is one difference between Application software and System software?
 
 
-Is the phrase cmp rdi, rsi machine language?
+16. Is the phrase cmp rdi, rsi machine language?
 
 
-How many buses are included in the system bus?
+17. How many buses are included in the system bus?
 
 
-What is the decimal value of 100101112?
+18. What is the decimal value of 100101112?
 
 
-What is the decimal value of 111111112?
+19. What is the decimal value of 111111112?
 
 
-What is the largest unsigned integer value that will fit into 16 bits?
+20. What is the largest unsigned integer value that will fit into 16 bits?
