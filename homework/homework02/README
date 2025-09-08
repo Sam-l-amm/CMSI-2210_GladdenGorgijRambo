@@ -8,25 +8,29 @@ What is the difference between a compiled language and an intepreted language?
 
 
 Is C a compiled language?
-
+   C is a compiled language, although it is slightly different from other compiled languages because in C doesn't enable a virtual OS, meaning the program is compiled to binary then executed by the users computer. 
 
 Who invented the C language?
-
+   C was developed by Dennis M. Richie at Bell Labs.
+      -Source: https://www.britannica.com/technology/C-computer-programming-language
 
 How long has C been in use?
+   C has been in use for between 56-52 years, as it was developed by Dennis M. Richie between 1969- 1973
+      -Source: https://www.britannica.com/technology/C-computer-programming-language
 
 
 Is a compiler a translator?
-
+   The compiler is a translator, this is because when someone writes in a high-level language a compiler must take this code and translate it into assembly language.
 
 Is an assembler a translator?
-
+   An assember is a translator because after a program is translated into assembly language by a compiler it is taken by an assembler and translated into machine language which can be understood by the machine.
 
 What is the command to list out the contents of a directory on a mac terminal window?
-
+   The command to list out the contents of a directory on a mac is "ls", on windows the command is dir.
 
 What does the C function atof() do?
-
+   The function atof() is used to convert a string into a floating-point number and represent the converted floating point number to its corresponding double value
+     -Source: https://www.tutorialspoint.com/c_standard_library/c_function_atof.htm
 
 What are the bottom two layers of a computer system? Give a brief desciption of each.
 
