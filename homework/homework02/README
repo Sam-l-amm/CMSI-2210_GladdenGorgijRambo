@@ -1,5 +1,5 @@
 1. What is a computer system?
-
+    A computer system is a system of interconnected hardware and software parts that work together to process data, recieve inputs and produce desired outputs, and perform tasks.
 
 2. What are some of the parts of a computer system?
    Some of the parts that make up a computer system are, the CPU, RAM, motherboard, GPU, SSD
@@ -34,15 +34,21 @@
      -Source: https://www.tutorialspoint.com/c_standard_library/c_function_atof.htm
 
 11. What are the bottom two layers of a computer system? Give a brief desciption of each.
-
+     The bottom layer of the system is the Digital Logic. This is the actual hardware enabling the computing. This consists of circuits, gates, motherboards, chips and all other physical parts.
+     The second to bottom layer is the Control Layer. This layer of the system contains the microcode that uses the hardwre in the layer below it. Microcode can take the form of firmware.
 
 12. What are the three steps of the Von Neumann Architecture?
+     1. Fetch -> Get the next instruction
+     2. Decode -> Interpret instruction
+     3. Execute -> Perform the instructed operation
 
 
 13. What is the purpose of an ALU?
+     The ALU is the Arithmetic Logic Unit. It handles all basic mathematical and logical operations on binary numbers (ADD, SUB, MUL, DIV, AND, OR etc).
 
 
 14. What is a register?
+     A register is a storage unit inside the CPU which stores an instruction for the program for the CPU to immediately execute.
 
 
 15. What is one difference between Application software and System software?
