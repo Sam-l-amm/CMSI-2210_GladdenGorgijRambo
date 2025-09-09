@@ -46,18 +46,26 @@
 
 
 15. What is one difference between Application software and System software?
+   One difference between Application Software and System Software is that Application Software is written for people, while System Software is written for computers.
 
 
 16. Is the phrase cmp rdi, rsi machine language?
+   No, the phrase "cmp rdi, rsi" is not machine language. The phrase is actually in Assembly language.
 
 
 17. How many buses are included in the system bus?
+   There are three buses included in the system bus. These buses are: the data bus, the address bus, and the control bus.
 
 
-18. What is the decimal value of 100101112?
+18. What is the decimal value of 10010111 (base 2)?
+    In order to figure out the decimal value of 10010111, we identity where each 1 bit is, write down their powers of two, then add them up. So, we 
+   would do: 2^0 + 2^1 + 2^2 + 2^4 + 2^7 = 1 + 2 + 4 + 16 + 128 = 151
 
 
-19. What is the decimal value of 111111112?
+19. What is the decimal value of 11111111 (base 2)?
+    In order to figure out the decimal value of 11111111, we identity where each 1 bit is, write down their powers of two, then add them up. So, we 
+   would do: 2^0 + 2^1 + 2^2 + 2^3 + 2^4 + 2^5 + 2^6 + 2^7 = 1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 = 255
 
 
 20. What is the largest unsigned integer value that will fit into 16 bits?
+    The largest unsigned integer value that will fit into 16 bits is 1111111111111111, or 65,535
