@@ -1,22 +1,22 @@
-1. Binary 10111101 in hex is:
+1. Binary 10111101 in hex is: 1011 1101 -> 0xBD
 
 
-2. Binary 1011110100000001 as an unsigned decimal is:
+2. Binary 1011110100000001 as an unsigned decimal is: 2^0 + 2^8 + 2^10 + 2^11 + 2^12+ 2^13 + 2^15 = 32768 + 8192 + 4096 + 2048 + 1024 + 256 + 1 = 48385
 
 
-3. Binary 1011110100000001 as a signed decimal is:
+3. Binary 1011110100000001 as a signed decimal is: Number is negative, since first bit is a one. In order to get its proper value, we must flip the bits, then add one. 1011110100000001 flipped is 0100001011111110. When we add 1, it becomes 0100001011111111. We then convert this to decimal, and put a negative sign at the front. 0100001011111111 -> -(2^0 + 2^1 + 2^2 + 2^3 + 2^4 + 2^5 + 2^6 + 2^7 + 2^9 + 2^14) = -17151
 
 
-4. Decimal 8000 encoded in 16-bits (unsigned) is in hex:
+4. Decimal 8000 encoded in 16-bits (unsigned) is in hex: 8000 is less than 65535, so we know it fits in 16 bits. In order to convert 8000 to hex, we must divide it by 16 until we have our quotient as 0. Doing this gives us 0x1F40.
 
 
-5. Decimal 8000 encoded in 16-bits (signed) is in hex:
+5. Decimal 8000 encoded in 16-bits (signed) is in hex: Decimal 8000 signed is the same as decimal 8000 un-signed, which is 1F40. This is because 8000 < 32767, which means we can represent it with our number of bits.
 
 
-6. Decimal -11 encoded in 16-bits (signed) is in hex:
+6. Decimal -11 encoded in 16-bits (signed) is in hex: In order to convert -11 to signed hex, you must convert the absolute value to binary, invert the bits, add one, then convert. 11 in binary (16-bits) is 0000 0000 0000 1011. We flip the bits, giving us 1111 1111 1111 0100. Then, we add one, giving us 1111 1111 1111 0101. This becomes 0xFFF5 in hex, which is our answer.
 
 
-7. Decimal -32717 encoded in 16-bits (signed) is in hex:
+7. Decimal -32717 encoded in 16-bits (signed) is in hex: We will follow the same procedure as #6 to solve #7. 32717 in binary is 0111 1111 1100 1101. We then flip the bits, giving us 1000 0000 0011 0010. We add one, giving us 1000 0000 0011 0011. This is then converted to hex, giving us 0x8033.
 
 
 8. Hex FAC3 in binary is:
@@ -113,10 +113,15 @@
 
 ---------------------------------------------------------------------------------
 
-37. 96.03125 as a 32-bit float, in hex is:
+37. 96.03125 as a 32-bit float, in hex is: In order to convert 96.03125 as a 32-bit float to hex, we must use the IEEE-754  format, where the first bit is the sign, the next 8 are the exponent, and the final 23 make up the "mantissa". 
+Our number is positive, so our first bit is automatically 0. We then convert 96 to binary, which is 1100000. Then, we multiply the decimal part by two until no decimal remains. So, 0.03125 * 2 = 0.0625 * 2 = 0.125 * 2 = 0.25 * 2 = 0.5 * 2 = 1. We did this 5 times, 
+so our decimal becomes .00001. We then combine the 96 and the decimal, giving us 1100000.00001. We need to also shift the decimal point, so we do that to get 1.10000000001 * 2^6. Our sign is a 0 bit, our exponent is 6 + 127 = 133 (10000101). We then pad
+our mantissa with bits to the right so it can be 23 bits long. This gives us 10000000001000000000000. Our number in IEEE-754 is thus 0 10000101 10000000001000000000000, which we now convert to hex. 
+To make it easier to convert to hex, we split it into 4 bit groups, which gives us 0100 0001 0110 0000 0001 0000 0000 0000. The hex conversion is now straightforward, with it being: 0x41601000.
 
-
-38. -16777216 as a 32-bit float, in hex is:
+38. -16777216 as a 32-bit float, in hex is: We must follow the procedures from #37 to solve #38. Our number is negative, so our sign is 1. Luckily, the absolute value of our number expressed as a power of 2 is 2^24. This makes our
+conversion much easier, as our mantissa is just 23 bits of 0. Our exponent is then 24 + 127 = 151 (10010111). In binary, our IEEE-754 number is therefore 11001011100000000000000000000000. Separating into 4-bit groups to make
+conversion easier gives us 1100 1011 1000 0000 0000 0000 0000 0000. The hex conversion is now straightforward, with it being: 0xCB800000.
 
 
 39. The largest finite IEEE-754 single precision float, in hex is:
