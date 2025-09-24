@@ -19,28 +19,53 @@
 7. Decimal -32717 encoded in 16-bits (signed) is in hex: We will follow the same procedure as #6 to solve #7. 32717 in binary is 0111 1111 1100 1101. We then flip the bits, giving us 1000 0000 0011 0010. We add one, giving us 1000 0000 0011 0011. This is then converted to hex, giving us 0x8033.
 
 
-8. Hex FAC3 in binary is:
+8. Hex FAC3 in binary is: 
+
+- 15 10 12 3
+  which is:
+
+  1111 1010 1100 0011
 
 
-9. Hex FAC3 as an unsigned decimal is:
+9. Hex FAC3 as an unsigned decimal is: 64195
+
+- (1 * 2^0) + (1 * 2^1) + (1 * 2^6) + (1 * 2^7) + (1 * 2^9) + (1 * 2^11) + (1 * 2^12) + (1 * 2^13) + (1 * 2^14) + (1 * 2^15) = 64195
 
 
-10. Hex FAC3 as a signed decimal is:
+10. Hex FAC3 as a signed decimal is: -1341
+- Flipped bits: 
+  0000 0101 0011 1100
+  Plus One: 
+  0000 0101 0011 1101
+  This in decimal form is: -1341
 
 
-11. Hex 0064 in binary is:
+11. Hex 0064 in binary is: 
+
+- 0000 0000 0110 0100
+   0     0    6    4
 
 
-12. Hex 0064 as an unsigned decimal is:
+
+12. Hex 0064 as an unsigned decimal is: 100
+
+- (1 * 2^2) + (1 * 2^5) + (1 * 2^6) = 100
 
 
-13. Hex 0064 as a signed decimal is:
+13. Hex 0064 as a signed decimal is: 100
+
+- MSB is not 1, so it is not a negative signed decimal, therefore we need not perform 2's complement on it
 
 
-14. Hex 8000 in binary is:
+14. Hex 8000 in binary is: 
+
+- 1000 0000 0000 0000
+    8   0    0    0
 
 
-15. Hex 8000 as an unsigned decimal is:
+
+15. Hex 8000 as an unsigned decimal is: 32768
+- 8 * 16^3 = 32768
 
 
 16. Hex 8000 as a signed decimal is:
@@ -81,22 +106,28 @@
 26. The 16-bit operation 0x6159 + 0xF702 has a overflows (Y or N):
 - Yes
 
-27. The modular sum of 16-bit hex values EEEE + C00C is:
+27. The modular sum of 16-bit hex values EEEE + C00C is: 
+- 1AEFA
 
 
-28. The saturated sum of 16-bit hex values EEEE + C00C is:
+28. The saturated sum of 16-bit hex values EEEE + C00C is: 
+- FFFF
 
 
-29. The 16-bit operation 9EEE + AB0C has a carry (Y or N):
+29. The 16-bit operation 9EEE + AB0C has a carry (Y or N): 
+- Y
 
 
-30. The 16-bit operation 9EEE + AB0C has a overflows (Y or N):
+30. The 16-bit operation 9EEE + AB0C has a overflows (Y or N): 
+- Y
 
 
-31. The negation of 16-bit word 0xB00F is:
+31. The negation of 16-bit word 0xB00F is: 
+- 4FF1
 
 
-32. The negation of 16-bit word 0x2232 is:
+32. The negation of 16-bit word 0x2232 is: 
+- DDCE
 
 
 33. The negation of 16-bit word 0x8000 is:
@@ -124,17 +155,46 @@ conversion much easier, as our mantissa is just 23 bits of 0. Our exponent is th
 conversion easier gives us 1100 1011 1000 0000 0000 0000 0000 0000. The hex conversion is now straightforward, with it being: 0xCB800000.
 
 
-39. The largest finite IEEE-754 single precision float, in hex is:
+39. The largest finite IEEE-754 single precision float, in hex is: 
+- 0x7F7FFFFF
 
+  Sign: 0
+
+  Exponent: 254 → 11111110
+
+  Fraction: 23 ones → 11111111111111111111111
+
+  Binary:
+  0111 1111 0111 1111 1111 1111 1111 1111
+    7    F    7    F    F    F    F    F
+  
+  
 
 40. The smallest finite IEEE-754 single precision float, in hex is:
+
+- 0x00800000
+
+  Sign = 0
+  Exponent = 1 (biased = 1 → actual exponent = −126)
+  Fraction = 0
+
 
 
 41. The largest nonzero negative IEEE-754 single precision float, in hex is:
 
+- 0xFF7FFFFF
+
+  Sign = 1
+  Exponent = 254 (largest before infinity)
+  Fraction = all 1s
 
 42. The smallest nonezero positive IEEE-754 single precision float, in hex is:
 
+- 0x00000001
+
+  Sign = 0
+  Exponent = 0 (subnormal)
+  Fraction = 0…01 (only last fraction bit set)
 
 43. -5.125 X 290 as a 32-bit float, in hex is:
 - 0xDB480000
