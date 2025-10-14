@@ -19,21 +19,21 @@ X := A and B or such as Y := not-B and (A or C).
 
 
 3. Given a 32-bit register, write logic instructions to perform the following operations. For parts (c) and (f) assume an unsigned interpretation; for part (d) assume a signed interpretation. NOTE THAT THE STARTING VALUE OF THE REGISTER IS NOT IMPORTANT — your solution MUST WORK for any starting value.
-Clear all even numbered bits.
-Set the last three bits.
-Compute the remainder when divided by 8.
-Make the value -1
-Complement the two highest order bits ['complement' means change the binary value to its opposite state — if it's a '1' it becomes a '0' and/or the other way round]
-Compute the largest multiple of 8 less than or equal to the value itself [a multiple of 8 is a value that can be divided evenly by 8, like 16, 32, 48, 64, 80, etc.]
+          a.Clear all even numbered bits.
+          b.Set the last three bits.
+          c.Compute the remainder when divided by 8.
+          d.Make the value -1
+          e.Complement the two highest order bits ['complement' means change the binary value to its opposite state — if it's a '1' it becomes a '0' and/or the other way round]
+          f.Compute the largest multiple of 8 less than or equal to the value itself [a multiple of 8 is a value that can be divided evenly by 8, like 16, 32, 48, 64, 80, etc.]
 
 
 
 4. Write a simple C program to play the game fizz-buzz. This game lists all integer numbers from one to N in order, except for the following cases:
-1) if a number is divisible by 3 the program should print fizz
-2) if a number is divisible by 5 the program should print buzz
-3) if a number is divisible by both 3 AND 5 the program should print fizz-buzz
-4) all other cases should simply print the number
-Make your program ask the user for the value of N. Be sure to check for errors in the entry; for example, entering a zero or a negative number.
+          1) if a number is divisible by 3 the program should print fizz
+          2) if a number is divisible by 5 the program should print buzz
+          3) if a number is divisible by both 3 AND 5 the program should print fizz-buzz
+          4) all other cases should simply print the number
+          Make your program ask the user for the value of N. Be sure to check for errors in the entry; for example, entering a zero or a negative number.
 
 
 
