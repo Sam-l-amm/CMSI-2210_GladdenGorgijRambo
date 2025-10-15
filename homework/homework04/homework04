@@ -31,7 +31,7 @@ Y := NAND(A, NAND(C,C))
 a1a0 is a 2-bit signed number (call it a) and b1b0 is a 2-bit signed number (call it b). The circuit has one output, c, which is 1 if a > b and 0 otherwise.
 
 
-
+Completed in Question2 photo in Homework4 file
 
 3. Given a 32-bit register, write logic instructions to perform the following operations. For parts (c) and (f) assume an unsigned interpretation; 
 for part (d) assume a signed interpretation. NOTE THAT THE STARTING VALUE OF THE REGISTER IS NOT IMPORTANT — your solution MUST WORK for any starting value.
