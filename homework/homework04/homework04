@@ -18,8 +18,19 @@ They can take the form of a logical equation such as
 
 X := A and B or such as Y := not-B and (A or C).
 
+With AND, OR, and NOT gates
+X := A or (not-A and B and C)
+Y := not-A or C
+
+Using only NAND gates
+X := NAND( NAND(A, A), NAND(B, C))
+Y := NAND(A, NAND(C,C))
+
+
 2. Draw a logic circuit that compares two 2-bit signed numbers as follows. It should have four inputs a1, a0, b1, and b0. 
 a1a0 is a 2-bit signed number (call it a) and b1b0 is a 2-bit signed number (call it b). The circuit has one output, c, which is 1 if a > b and 0 otherwise.
+
+
 
 
 3. Given a 32-bit register, write logic instructions to perform the following operations. For parts (c) and (f) assume an unsigned interpretation; for part (d) assume a signed interpretation. NOTE THAT THE STARTING VALUE OF THE REGISTER IS NOT IMPORTANT — your solution MUST WORK for any starting value.
