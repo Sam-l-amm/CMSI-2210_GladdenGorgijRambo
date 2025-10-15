@@ -36,12 +36,34 @@ Completed in Question2 photo in Homework4 file
 3. Given a 32-bit register, write logic instructions to perform the following operations. For parts (c) and (f) assume an unsigned interpretation; 
 for part (d) assume a signed interpretation. NOTE THAT THE STARTING VALUE OF THE REGISTER IS NOT IMPORTANT — your solution MUST WORK for any starting value.
           a.Clear all even numbered bits.
+
+          Logic Operator: AND, Mask: 0xAAAAAAAA
+          AND 1010 1010 1010 1010 1010 1010 1010 1010 binary
+
           b.Set the last three bits.
+
+          Logic Operator: OR, Mask: 0x00000007
+          OR 0000 0000 0000 0000 0000 0000 0000 0111
+
           c.Compute the remainder when divided by 8.
+
+          Logic Operator: AND, Mask:0x00000007
+          AND 0000 0000 0000 0000 0000 0000 0000 0111
+
           d.Make the value -1
+
+          Logic Operator: OR, Mask: 0xFFFFFFFF
+          OR 1111 1111 1111 1111 1111 1111 1111 1111
+
           e.Complement the two highest order bits ['complement' means change the binary value to its opposite state — if it's a '1' it becomes a '0' and/or the other way round]
+
+          Logic Operator: XOR, Mask: 0xC0000000
+          XOR 1100 0000 0000 0000 0000 0000 0000 0000
+
           f.Compute the largest multiple of 8 less than or equal to the value itself [a multiple of 8 is a value that can be divided evenly by 8, like 16, 32, 48, 64, 80, etc.]
 
+          Logic Operator: AND, Mask: 0xFFFFFFF8
+          AND 1111 1111 1111 1111 1111 1111 1111 1000
 
 
 
