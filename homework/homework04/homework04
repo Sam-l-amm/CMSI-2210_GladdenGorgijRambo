@@ -82,14 +82,81 @@ Completed in Fizzbuzz.c file included in Homework4 file
 
 5. For the sample Stanley/Penguin single-accumulator computer discussed in class, write a complete assembly language program in the Stanley/Penguin language that sends the values 0 through 255 out to port 0x8. NOTE: the machine code for this will be written in the next problem.
 
+JMP start
+
+num: 0
+
+max: 255
+
+one: 1
+
+start: LOAD [num]
+
+WRITE 0x8
+
+ADD one
+
+STORE num
+
+SUB max
+
+JZ end
+
+JMP start
+
+end: JMP end
+
   
   
 6. Translate your Stanley/Penguin language program in the previous problem to machine language.
 
+C0000004
+00000000
+000000FF
+00000001
+00000001
+30000008
+40000003
+10000001
+50000002
+D000000B
+C0000004
+C000000B
   
   
 7. For the sample single-accumulator computer discussed in class, write a complete assembly language program in the stanley/penguin language that computes a greatest common divisor. Assume the two inputs are read in from port 0x100. Write the result to port 0x200. You do not need to write machine code for this problem.
 
+JMP start
+
+a: 0
+b: 0
+temp: 0
+zero: 0
+
+start: READ 0x100
+       STORE a
+       READ 0x100
+       STORE b
+       JMP gcd
+
+gcd: LOAD b
+     JZ done
+     LOAD a
+     MOD b
+     STORE temp
+     LOAD b
+     STORE a
+     LOAD temp
+     STORE b
+     JMP gcd
+
+done:
+     LOAD a
+     WRITE 0x200
+     JMP end
+
+end: JMP end
+	
 
 
 8. For the sample single-accumulator computer discussed in class, give a code fragment, in assembly language of the stanley/penguin language, that swaps the accumulator and memory address 0x30AA. You do not need to write machine code for this problem.
