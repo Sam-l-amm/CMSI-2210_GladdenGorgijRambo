@@ -161,18 +161,31 @@ end: JMP end
 
 8. For the sample single-accumulator computer discussed in class, give a code fragment, in assembly language of the stanley/penguin language, that swaps the accumulator and memory address 0x30AA. You do not need to write machine code for this problem.
 
-  
+    STORE 0x30AB    ; Save accumulator into temp
+    LOAD 0x30AA     ; Load M[0x30AA] into accumulator
+    STORE 0x30AC    ; Save M[0x30AA] temporarily
+    LOAD 0x30AB     ; Restore old accumulator value
+    STORE 0x30AA    ; Store it into M[0x30AA]
+    LOAD 0x30AC     ; Load the original M[0x30AA] back into accumulator
   
 9. For the sample single-accumulator computer discussed in class, give a code fragment, in assembly language of the stanley/penguin language that has the effect of jumping to the code at address 0x837BBE1 if the value in the accumulator is greater than or equal to 0. You do not need to write machine code for this problem.
 
-
+    JGZ  0x837BBE1      ; Jump if accumulator > 0
+    JZ   0x837BBE1      ; Jump if accumulator == 0
 
 10. Part 1 of 2: Explain, at a high-level, what the following sequence of instructions does. In other words, suppose a programmer has stored data in r8 and r9. After executing these instructions, what does the programmer notice about the data? [HINT: It will help if you pick some binary values and walk through the operations.]
       xor r8, r9
       xor r9, r8
       xor r8, r9
+
+          This code swaps the values stored in register 8 and register 9. The first line takes the XOR of r8 and r9 and stores that in r8. Then the value of r9 
+          is XORed with the new value stored at r8 (r8 XOR r9) which comes back to be r8, this new value (r9 XOR (r8 XOR r9) or just r8) is stored in r9. And then r8's 
+          value is updated with the result of XORing its current value (r8 XOR r9) with r9 which simplifies to r9. So now r8 contains r9's original value,
+          and r9 contains r8's original value.
                     
 10. Part 2 of 2: Also state as briefly as possible why that effect happens.
+
+          It works because XOR is its own inverse and cancels itself out. Applying XOR with the same value twice restores the original value.
 
 
 
