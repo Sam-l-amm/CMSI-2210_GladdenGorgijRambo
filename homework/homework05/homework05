@@ -1,5 +1,6 @@
 1. Write a C program, dec2bin.c to convert a base-10 number to its 32-bit binary value equivalent. You may take the base-10 number in from the command line, or you may prompt the user for the number and read in her response [your option]. Your output should be a string of binary digits which correspond to the base-10 value. For example, running the program with dec2bin 65535 [or just dec2bin if asking the user] should produce the output string 00000000000000001111111111111111. Use unsigned integers.
 
+Completed Program in dec2bin.c
 
 
 2. Write a C program like problem #1 to to make the program dec2hex.c which will output the 32-bit or 64-bit [8-digit or 16-digit] hexidecimal equivalent of its input. For this modification, you must also handle an optional command line argument which indicates the number of digits the output hex value will contain, either 8 or 16. This will be the second argument on the line and if it is omitted the program will default to 32-bit. For example, running the program with dec2hex 65535 8 should produce the output string 0x0000FFFF, andrunning with dec2hex 65535 16 should result in the output string 0x000000000000FFFF.
