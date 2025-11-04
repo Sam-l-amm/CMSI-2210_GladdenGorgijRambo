@@ -6,7 +6,8 @@ Completed Program in dec2bin.c
 2. Write a C program like problem #1 to to make the program dec2hex.c which will output the 32-bit or 64-bit [8-digit or 16-digit] hexidecimal equivalent of its input. For this modification, you must also handle an optional command line argument which indicates the number of digits the output hex value will contain, either 8 or 16. This will be the second argument on the line and if it is omitted the program will default to 32-bit. For example, running the program with dec2hex 65535 8 should produce the output string 0x0000FFFF, andrunning with dec2hex 65535 16 should result in the output string 0x000000000000FFFF.
 If asking the user for input, both values should be asked for using separate prompts. If getting the values from the command line, accept a space-delimited list of two numbers. Use unsigned integers for this problem. [HINT: check out the printf() output format specification — you'll find some help there to make things easier.]
 
-  
+Completed Program in dec2hex.c  
+
   
 3. Write a C program timesTables.cto output the times tables from 2 to N, where N is a user-defined number take from the command line. Output the values in a nice table, using a format specifier that will allow for enough space for the results to be neatly aligned in columns.
 
