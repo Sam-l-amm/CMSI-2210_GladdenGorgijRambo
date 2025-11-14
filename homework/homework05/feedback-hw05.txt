@@ -1,0 +1,59 @@
+
+
+Evaluation Criteria ~ homework05
+CMSI 2210 Section 02 Fall 2025
+=================================
+
+dec2bin
+   compiles       [ 5 pts.]      5 points earned
+   error checks   [ 5 pts.]      5 points earned
+   runs  tests    [10 pts.]     10 points earned
+dec2hex
+   compiles       [ 5 pts.]      5 points earned
+   error checks   [ 5 pts.]      5 points earned
+   32-bit tests   [ 5 pts.]      5 points earned
+   64-bit tests   [ 5 pts.]      5 points earned
+timesTables
+   compiles       [ 5 pts.]      5 points earned
+   error checks   [ 5 pts.]      5 points earned
+   runs  tests    [10 pts.]      9 points earned
+holdit
+   compiles       [ 5 pts.]      5 points earned
+   runs tests     [15 pts.]     14 points earned
+wordcount
+   compiles       [ 5 pts.]      5 points earned
+   error checks   [ 5 pts.]      5 points earned
+   runs tests     [10 pts.]     10 points earned
+
+ Total possible ~ 100 points
+
+========================================================
+
+TOTAL EARNED POINTS:
+   you earned 98/100 which is 98.00% which is an A-plus
+
+========================================================
+SPECIFIC COMMENTS/FEEDBACK:
+
+On holdit, your output doesn't have any newlines so it is all run together
+   in one long line.  Don't forget that in printf, unlike python, YOU ARE
+   THE ONE TO CONTROL THAT!
+
+On dec2bin you didn't check for a bad input ~ when I entered "asdf" instead
+   of a number, I still got a value.  You should always check your inputs!
+
+Otherwise, VERY nice work!  You followed the problem specifications, which
+   made this a joy to evaluate with my batch file script.  Thank you!
+
+========================================================
+SEMESTER SCORE SO FAR:
+
+   Homework01  100.00% of  5 points =  5.00 points
+   Homework02  100.00% of  5 points =  5.00 points
+   Homework03  107.22% of  5 points =  5.36 points
+   Homework04  100.00% of  5 points =  5.00 points
+   Homework05   98.00% of 10 points =  9.80 points
+                               total: 30.16 out of 30.00 = 100.53%
+                                which is an A-plus
+
+Very nice work on this assignment ~ only one more, so keep it up!
