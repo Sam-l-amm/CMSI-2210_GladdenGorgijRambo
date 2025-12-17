@@ -1,0 +1,83 @@
+
+
+Evaluation Criteria ~ homework06
+CMSI 2210 Section all Fall 2025
+=================================
+                                    score
+FINDGCD.NASM                        ------
+   nasm file assembles  [5 pts.]    5 pts.
+   nasm runs            [5 pts.]    5 pts.
+   output correct       [3 pts.]    3 pts.
+GCDFINDER
+   nasm file assembles  [5 pts.]    5 pts.
+   gcdFinder.c compiles [5 pts.]    5 pts.
+   link both files OK   [5 pts.]    5 pts.
+   nasm returns value   [5 pts.]    5 pts.
+   output correct       [3 pts.]    3 pts.
+PARITYGEN
+   nasm file assembles  [5 pts.]    5 pts.
+   nasm runs            [5 pts.]    5 pts.
+   output correct       [3 pts.]    3 pts.
+WHICHENDISUP
+   compiles no errors   [5 pts.]    5 pts.
+   runs no errors       [5 pts.]    5 pts.
+MAKENBOC.C
+   compiles no errors   [5 pts.]    5 pts.
+   uses previous func.  [5 pts.]    5 pts.
+   tester compiles      [5 pts.]    5 pts.
+   tester runs          [5 pts.]    5 pts.
+   output correct       [3 pts.]    3 pts.
+MAKENBO.NASM [Extra credit]
+   nasm file assembles  [5 pts.]    5 pts.
+   link all files OK    [5 pts.]    5 pts.
+   calls "C" function   [5 pts.]    5 pts.
+   output correct       [3 pts.]    3 pts.
+
+Total possible points 82
+   plus 18 extra credit
+   possible maximum of 118%
+
+========================================================
+
+TOTAL EARNED POINTS:
+   you earned 82.00/82.00 which is 100% plus
+   18 extra credit points which is 118% which is an A-plus
+
+========================================================
+SPECIFIC COMMENTS/FEEDBACK:
+
+problem 1 findGCD.nasm
+   works as advertised
+
+problem 2 findGCDfunc.nasm & gcdFinder.c
+   works as advertised
+
+problem 3 paritygen.nasm
+   works as advertised
+   odd to mix in x86 code when everything else is in ARM assembly... :)
+
+problem 4 whichEndIsUp.c
+   works as advertised
+
+problem 5 makeNBOC.c & makeNBOCtest.c
+   works as advertised
+
+problem 6 makeNBOC.c & makeNBON.nasm
+   works as advertised
+
+========================================================
+SEMESTER HOMEWORK TOTALS:
+
+   Homework01  100.00% of  5 points =  5.00 points
+   Homework02  100.00% of  5 points =  5.00 points
+   Homework03  107.22% of  5 points =  5.36 points
+   Homework04  100.00% of  5 points =  5.00 points
+   Homework05   98.00% of 10 points =  9.80 points
+                               total: 30.16 out of 30.00 = 100.53%
+   homework06  118.00% of 15 points = 17.70 points
+                      semester total: 47.86 out of 45.00 = 106.36%
+                             which is an A-plus
+
+Great work!  It's been wonderful having you three in class this semester!
+Best wishes for a great holiday break and I look forward to seeing you all
+around campus in the spring!

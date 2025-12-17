@@ -15,9 +15,9 @@
 _findGCD:
     /* * Algorithm: Euclidean (Modulo version)
      * while (b != 0) {
-     * remainder = a % b;
-     * a = b;
-     * b = remainder;
+     *   remainder = a % b;
+     *   a = b;
+     *   b = remainder;
      * }
      * return a;
      */
